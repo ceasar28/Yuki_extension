@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Web Audio Recorder",
+  "name": "Yuki transcriber",
   "version": "3.1.0",
-  "description": "Record audio from web pages",
+  "description": "Transcribe Audio to texts",
   "permissions": [
     "activeTab",
     "downloads",
