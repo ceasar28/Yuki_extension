@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Web Audio Recorder",
+  "version": "3.1.0",
+  "description": "Record audio from web pages",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "tabCapture",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["config.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "js": ["popup2.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": { "service_worker": "background.js" }
+}

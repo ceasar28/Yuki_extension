@@ -1,0 +1,13 @@
+# Config files with sensitive data
+config.json
+*.config.json
+.env
+audio.js
+audio2.js
+audio3.js
+audio4.js
+
+# Other common files to ignore
+.DS_Store
+node_modules/
+*.log 
